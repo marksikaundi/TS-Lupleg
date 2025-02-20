@@ -8,6 +8,7 @@ const typescriptTips = [
     code: `let message = "Hello, TypeScript!";
 console.log(typeof message); // Output: string`,
     category: "Basics",
+    id: 1,
   },
   {
     title: "Union Types",
@@ -18,6 +19,7 @@ console.log(typeof message); // Output: string`,
 printId(101); // OK
 printId("202"); // OK`,
     category: "Basics",
+    id: 2,
   },
   {
     title: "Type Aliases",
@@ -30,6 +32,7 @@ printId("202"); // OK`,
 const point: Point = { x: 10, y: 20 };
 console.log(point);`,
     category: "Basics",
+    id: 3,
   },
   {
     title: "Interfaces",
@@ -42,6 +45,7 @@ console.log(point);`,
 const user: Person = { name: "Alice", age: 30 };
 console.log(user);`,
     category: "Basics",
+    id: 4,
   },
   {
     title: "Optional Properties",
@@ -55,6 +59,7 @@ console.log(user);`,
 const car: Car = { make: "Toyota", model: "Corolla" };
 console.log(car);`,
     category: "Intermediate",
+    id: 5,
   },
   {
     title: "Readonly Properties",
@@ -68,6 +73,7 @@ const point: Point = { x: 10, y: 20 };
 // point.x = 5; // Error: Cannot assign to 'x' because it is a read-only property.
 console.log(point);`,
     category: "Intermediate",
+    id: 6,
   },
   {
     title: "Function Types",
@@ -77,6 +83,7 @@ console.log(point);`,
 const add: MathFunc = (a, b) => a + b;
 console.log(add(5, 10)); // Output: 15`,
     category: "Intermediate",
+    id: 7,
   },
   {
     title: "Generics",
@@ -88,6 +95,7 @@ console.log(add(5, 10)); // Output: 15`,
 console.log(identity<string>("Hello")); // Output: Hello
 console.log(identity<number>(42)); // Output: 42`,
     category: "Advanced",
+    id: 8,
   },
   {
     title: "Enum",
@@ -102,6 +110,7 @@ console.log(identity<number>(42)); // Output: 42`,
 console.log(Direction.Up); // Output: 0
 console.log(Direction[2]); // Output: Left`,
     category: "Intermediate",
+    id: 9,
   },
   {
     title: "Tuple Types",
@@ -110,6 +119,7 @@ console.log(Direction[2]); // Output: Left`,
 console.log(tuple[0].substring(1)); // OK
 // console.log(tuple[1].substring(1)); // Error, 'number' does not have 'substring'`,
     category: "Intermediate",
+    id: 10,
   },
   {
     title: "Null and Undefined",
@@ -120,6 +130,7 @@ let n: null = null;
 console.log(typeof u); // Output: undefined
 console.log(typeof n); // Output: object`,
     category: "Basics",
+    id: 11,
   },
   {
     title: "Never Type",
@@ -136,6 +147,7 @@ function fail() {
 // Uncomment to see the error
 // fail();`,
     category: "Advanced",
+    id: 12,
   },
   {
     title: "Type Assertions",
@@ -144,6 +156,7 @@ function fail() {
 let strLength: number = (someValue as string).length;
 console.log(strLength); // Output: 16`,
     category: "Intermediate",
+    id: 13,
   },
   {
     title: "Intersection Types",
@@ -163,6 +176,7 @@ const cc: ColorfulCircle = {
 };
 console.log(cc);`,
     category: "Advanced",
+    id: 14,
   },
   {
     title: "Literal Types",
@@ -176,6 +190,7 @@ function animate(dx: number, dy: number, easing: Easing) {
 animate(0, 0, "ease-in");
 // animate(0, 0, "linear"); // Error: Argument of type '"linear"' is not assignable to parameter of type 'Easing'.`,
     category: "Intermediate",
+    id: 15,
   },
   {
     title: "keyof Operator",
@@ -195,6 +210,7 @@ let person = { name: "Alice", age: 30 };
 console.log(getProperty(person, "name")); // Output: Alice
 // console.log(getProperty(person, "location")); // Error: Argument of type '"location"' is not assignable to parameter of type 'keyof Person'.`,
     category: "Advanced",
+    id: 16,
   },
   {
     title: "Mapped Types",
@@ -217,6 +233,7 @@ const person: Readonly<Person> = {
 // person.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only property.
 console.log(person);`,
     category: "Advanced",
+    id: 17,
   },
   {
     title: "Conditional Types",
@@ -230,6 +247,7 @@ type ResultType = NonNullable<string | number | undefined>;
 let result: ResultType = "Hello";
 console.log(typeof result); // Output: string`,
     category: "Advanced",
+    id: 18,
   },
   {
     title: "Utility Types: Partial",
@@ -254,6 +272,7 @@ const todo2 = updateTodo(todo1, {
 
 console.log(todo2);`,
     category: "Utility Types",
+    id: 19,
   },
   {
     title: "Utility Types: Required",
@@ -270,6 +289,7 @@ const obj2: Required<Props> = { a: 5, b: "test" };
 console.log(obj);
 console.log(obj2);`,
     category: "Utility Types",
+    id: 20,
   },
   {
     title: "Utility Types: Pick",
@@ -289,6 +309,7 @@ const todo: TodoPreview = {
 
 console.log(todo);`,
     category: "Utility Types",
+    id: 21,
   },
   {
     title: "Utility Types: Omit",
@@ -309,6 +330,7 @@ const todoInfo: TodoInfo = {
 
 console.log(todoInfo);`,
     category: "Utility Types",
+    id: 22,
   },
   {
     title: "Utility Types: ReturnType",
@@ -323,6 +345,7 @@ type T0 = ReturnType<typeof f1>;
 const result: T0 = { a: 2, b: "example" };
 console.log(result);`,
     category: "Utility Types",
+    id: 23,
   },
   {
     title: "Type Guards",
@@ -343,6 +366,7 @@ function example(x: unknown) {
 example("hello"); // Output: HELLO
 example(123); // Output: Not a string`,
     category: "Advanced",
+    id: 24,
   },
   {
     title: "Index Signatures",
@@ -354,6 +378,7 @@ example(123); // Output: Not a string`,
 const myArray: StringArray = ["Bob", "Fred"];
 console.log(myArray[0]); // Output: Bob`,
     category: "Intermediate",
+    id: 25,
   },
   {
     title: "Decorators",
@@ -378,6 +403,7 @@ class Calculator {
 const calc = new Calculator();
 console.log(calc.add(1, 2)); // Output: Calling add with [1, 2] \n 3`,
     category: "Advanced",
+    id: 26,
   },
   {
     title: "Mixins",
@@ -443,6 +469,7 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
 // Uncomment to see the output
 // smartObj;`,
     category: "Advanced",
+    id: 27,
   },
   {
     title: "Namespace",
@@ -488,6 +515,7 @@ strings.forEach(s => {
   }
 });`,
     category: "Advanced",
+    id: 28,
   },
   {
     title: "Symbols",
@@ -505,6 +533,7 @@ const obj = {
 console.log(obj[sym1]); // Output: Value for sym1
 console.log(obj[sym2]); // Output: Value for sym2`,
     category: "Advanced",
+    id: 29,
   },
   {
     title: "Template Literal Types",
@@ -518,6 +547,7 @@ type AllLocaleIDs = \`\${EmailLocaleIDs | FooterLocaleIDs}_id\`;
 const id: AllLocaleIDs = "welcome_email_id";
 console.log(id);`,
     category: "Advanced",
+    id: 30,
   },
 ]
 
