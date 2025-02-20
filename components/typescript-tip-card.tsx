@@ -61,7 +61,7 @@ export function TypeScriptTipCard({ tip }: { tip: TypeScriptTip }) {
       <Card className="w-full max-w-2xl">
         <CardHeader>
           <div className="flex items-center justify-between">
-            <CardTitle className="text-2xl font-bold">{tip.title}</CardTitle>
+            <CardTitle className="text-2xl font-bold text-[#2D1637] ">{tip.title}</CardTitle>
             <Badge variant="secondary">{tip.category}</Badge>
           </div>
           <CardDescription>{tip.description}</CardDescription>
@@ -82,7 +82,7 @@ export function TypeScriptTipCard({ tip }: { tip: TypeScriptTip }) {
               Share
             </Button>
           </div>
-          <Button variant="outline" size="sm" onClick={() => setIsModalOpen(true)}>
+          <Button className="bg-[#2D1637] hover:bg-[#2D1637] text-white  hover:text-white " variant="outline" size="sm" onClick={() => setIsModalOpen(true)}>
             <Code2 className="w-4 h-4 mr-2" />
             Try it out
           </Button>
@@ -92,4 +92,3 @@ export function TypeScriptTipCard({ tip }: { tip: TypeScriptTip }) {
     </>
   )
 }
-
