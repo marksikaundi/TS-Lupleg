@@ -1,10 +1,10 @@
-# TS-Lupleg
+# TS.Lupleg
 
-A TypeScript-based lightweight utility library for modern web development.
+Is a Platform for TypeScript utility functions and types. where you can learn basics of TypeScript and how to use it in your projects. The platform even have built in Editor where you can write TypeScript code and see the output in real time. Its hustle free without thinking of setting up the environment. We made it easy for you to learn TypeScript.
 
 ## Description
 
-TS-Lupleg is a robust, type-safe utility library designed to simplify common programming tasks while leveraging TypeScript's powerful type system. It provides a collection of helper functions, types, and utilities to enhance development productivity.
+TS.Lupleg is a collection of utility functions and types for TypeScript. It provides a set of type-safe functions that can be used in any TypeScript project. The library is designed to be lightweight and performant, with zero dependencies and modern ES6+ support.
 
 ## Features
 
@@ -15,44 +15,9 @@ TS-Lupleg is a robust, type-safe utility library designed to simplify common pro
 - 📝 Comprehensive documentation
 - ⚡ Lightweight and performant
 
-## Installation
+## No Need to Setup Environment
 
-```bash
-npm install ts-lupleg
-# or
-yarn add ts-lupleg
-# or
-pnpm add ts-lupleg
-```
-
-## Usage
-
-```typescript
-import { someUtility } from 'ts-lupleg';
-
-// Example usage
-const result = someUtility();
-```
-
-## API Documentation
-
-### Core Utilities
-
-#### `functionName()`
-Description of the function and its usage.
-
-```typescript
-// Example code
-```
-
-### Types
-
-```typescript
-interface SomeInterface {
-  property: string;
-  optional?: number;
-}
-```
+TS.Lupleg comes with built-in Editor where you can write TypeScript code and see the output in real time. Its hustle free without thinking of setting up the environment. We made it easy for you to learn TypeScript.
 
 ## Contributing
 
@@ -114,19 +79,6 @@ For support, please open an issue in the GitHub repository or contact [support e
 
 This project is actively maintained and in development. We welcome feedback and contributions from the community.
 
-## FAQs
-
-**Q: Question 1?**
-A: Answer 1
-
-**Q: Question 2?**
-A: Answer 2
-
-## Related Projects
-
-- [Project 1](link)
-- [Project 2](link)
-
 ## Code of Conduct
 
 Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing to the project.
@@ -134,47 +86,3 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing to the
 ## Security
 
 If you discover any security-related issues, please email [security email] instead of using the issue tracker.
-
-## Roadmap
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-```
-
-This README template includes:
-
-1. Project description and features
-2. Installation instructions
-3. Usage examples
-4. API documentation structure
-5. Contributing guidelines
-6. Development setup
-7. Testing information
-8. License information
-9. Version history
-10. Authors and acknowledgments
-11. Support information
-12. Project status
-13. FAQs
-14. Related projects
-15. Code of conduct reference
-16. Security information
-17. Roadmap
-
-You should customize this template by:
-
-1. Adding actual function names and descriptions
-2. Including real code examples
-3. Adding proper contact information
-4. Updating the features list
-5. Adding specific installation requirements
-6. Including actual API documentation
-7. Updating the version history with real releases
-8. Adding real FAQs based on user feedback
-9. Including actual related projects
-10. Setting up proper security contacts
-11. Creating a realistic roadmap
-
-Remember to keep the README up to date as your project evolves.
