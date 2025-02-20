@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TS-Lupleg by Mark Sikaundi ",
+  title: "TS.Lupleg by Mark Sikaundi ",
   description: "Typescript tips and tricks",
 };
 
