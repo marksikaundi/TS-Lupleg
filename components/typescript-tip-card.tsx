@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Code2, ThumbsUp, Share2 } from "lucide-react"
 import { TypeScriptPreviewModal } from "./typescript-preview-modal"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 
 interface TypeScriptTip {
   id: number
