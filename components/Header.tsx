@@ -23,10 +23,10 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/features"
+              href="/contribute"
               className="text-[#2D1637] hover:text-[#2D1637] text-md  hidden md:block"
             >
-              Features
+              Contribute
             </Link>
 
             <Link
