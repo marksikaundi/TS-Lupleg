@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PiChatsTeardropDuotone } from "react-icons/pi";
+// import { FaGithub } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -23,17 +24,16 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/contribute"
-              className="text-[#2D1637] hover:text-[#2D1637] text-md  hidden md:block"
+              href="https://github.com/Lupleg/TS-lupleg"
+              className="text-[#2D1637]  hover:text-[#2D1637]  text-md  hidden md:block"
             >
-              Contribute
+              Github
+              {/* <FaGithub className="size-8  " /> */}
             </Link>
 
             <Link
               href="/typescript-tips"
               className="text-white rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center bg-[#2D1637] hover:bg-[#2D1637] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-
-            //   className="inline-flex h-9 items-center justify-center rounded-full bg-black px-4 text-md font-medium text-white hover:bg-black"
             >
               <PiChatsTeardropDuotone className="w-5 h-5 mr-2 " aria-hidden />
               Solve now
