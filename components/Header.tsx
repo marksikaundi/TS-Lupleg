@@ -17,7 +17,7 @@ export default function Header() {
                 className="h-12 w-auto"
               /> */}
               <h2 className="h-12 w-auto text-[#2D1637] font-bold mt-2 text-lg">
-                TS-Lupleg
+                TS.Lupleg
               </h2>
             </Link>
           </div>
