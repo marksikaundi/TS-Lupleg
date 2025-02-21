@@ -63,7 +63,7 @@ const faqItems: FaqItem[] = [
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
-    <>
+    
       <section className="w-full max-w-6xl mx-auto px-4 py-12">
         <div id="faq" className="space-y-2 mb-8 mt-20">
           <p className="text-emerald-500 font-medium">FAQ</p>
@@ -95,6 +95,6 @@ export default function FAQ() {
           ))}
         </div>
       </section>
-    </>
+   
   );
 }
