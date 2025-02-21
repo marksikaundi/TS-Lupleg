@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mt-20 mb-16">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-            About Promptly
+            About TS.Lupleg
           </h1>
           <p className="mt-4 text-xl text-gray-600">
             Empowering creators with AI-driven content optimization
@@ -20,7 +20,7 @@ const AboutPage = () => {
               Our Mission
             </h2>
             <p className="text-gray-600">
-              At Promptly, we&apos;re on a mission to revolutionize content
+              At TS.Lupleg, we&apos;re on a mission to revolutionize content
               creation by making AI-powered optimization accessible to creators
               worldwide. We believe that every creator deserves the tools to
               maximize their content&apos;s potential and reach their target
@@ -81,7 +81,7 @@ const AboutPage = () => {
           </h2>
           <p className="text-gray-600 mb-8">
             Whether you&apos;re a seasoned content creator or just starting out,
-            Promptly is here to help you achieve your content goals. Join
+            TS.Lupleg is here to help you achieve your content goals. Join
             thousands of creators who are already using our platform to optimize
             their content and grow their audience.
           </p>

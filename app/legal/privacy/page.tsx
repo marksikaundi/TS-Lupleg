@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
           <p className="text-gray-700 mb-4">
-            Welcome to Promptly (&quot;we,&quot; &quot;our,&quot; or
+            Welcome to TS.Lupleg (&quot;we,&quot; &quot;our,&quot; or
             &quot;us&quot;). We are committed to protecting your privacy and
             ensuring the security of your personal information. This Privacy
             Policy explains how we collect, use, disclose, and safeguard your
@@ -154,7 +154,7 @@ const PrivacyPolicy = () => {
 
           <p className="text-gray-700">
             <MdEmail className="inline text-xl mr-2 text-gray-700" />
-            Email: privacy@promptly.com <br />
+            Email: privacy@TS.Lupleg.com <br />
           </p>
 
           <p className="text-gray-700">

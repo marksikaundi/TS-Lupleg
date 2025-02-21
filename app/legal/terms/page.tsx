@@ -21,7 +21,7 @@ const TermsPage = () => {
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
           <p className="text-gray-700">
-            Welcome to Promptly (&quot;we,&quot; &quot;our,&quot; or
+            Welcome to TS.Lupleg (&quot;we,&quot; &quot;our,&quot; or
             &quot;us&quot;). By accessing or using our website and services, you
             agree to be bound by these Terms and Conditions. Please read these
             terms carefully before using our services.
@@ -32,7 +32,7 @@ const TermsPage = () => {
           <h2 className="text-2xl font-semibold mb-4">2. Definitions</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
             <li>
-              &quot;Service&quot; refers to Promptly&apos;s website and AI
+              &quot;Service&quot; refers to TS.Lupleg&apos;s website and AI
               prompt management platform.
             </li>
             <li>
@@ -85,7 +85,7 @@ const TermsPage = () => {
           </h2>
           <p className="text-gray-700">
             The Service and its original content, features, and functionality
-            are owned by Promptly and are protected by international copyright,
+            are owned by TS.Lupleg and are protected by international copyright,
             trademark, and other intellectual property laws.
           </p>
         </section>
@@ -133,9 +133,10 @@ const TermsPage = () => {
             10. Limitation of Liability
           </h2>
           <p className="text-gray-700">
-            To the maximum extent permitted by law, Promptly shall not be liable
-            for any indirect, incidental, special, consequential, or punitive
-            damages resulting from your use or inability to use the Service.
+            To the maximum extent permitted by law, TS.Lupleg shall not be
+            liable for any indirect, incidental, special, consequential, or
+            punitive damages resulting from your use or inability to use the
+            Service.
           </p>
         </section>
 
@@ -155,7 +156,7 @@ const TermsPage = () => {
           </h2>
           <p className="text-gray-700">
             If you have any questions about these Terms, please contact us at
-            support@promptly.com
+            support@TS.Lupleg.com
           </p>
         </section>
       </div>
