@@ -28,8 +28,6 @@ export default function Home() {
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-white gap-2 bg-[#2D1637] hover:bg-[#2D1637] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="/typescript-tips"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <PiChatsTeardropDuotone className="w-5 h-5" aria-hidden />
             Solve now
