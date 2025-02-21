@@ -10,10 +10,9 @@ const footerData = [
   {
     title: "Company",
     links: [
-      { name: "About us", path: "/about" },
-      { name: "Contribute", path: "/contribute" },
-      { name: "Features", path: "/features" },
-      { name: "Our Story", path: "/our-story" },
+      { name: "About us", path: "/company/about" },
+      { name: "Contribute", path: "/company/contribute" },
+      { name: "Our Story", path: "/company/our-story" },
     ],
   },
   {
@@ -21,7 +20,6 @@ const footerData = [
     links: [
       { name: "Terms", path: "/legal/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
-      { name: "Cookies", path: "/legal/cookies" },
       { name: "FAQ", path: "/legal/faq" },
     ],
   },
@@ -61,8 +59,8 @@ export default function Footer() {
           <div>
             <h5 className="mb-4 font-bold">Support us</h5>
             <div className="mt-8">
-              <Button className="bg-[#F3A833] hover:bg-[#F3A833]">
-                <FcDonate className="mr-2" />
+              <Button className="text-[#2D1637] bg-[#ffffff] hover:bg-[#ffffff]">
+                <FcDonate className="mr-2 text-[#2D1637] " />
                 Donate
               </Button>
             </div>
@@ -79,7 +77,7 @@ export default function Footer() {
             <Link href="https://linkedin.com/school/lupleg">
               <FaLinkedinIn className="text-white" />
             </Link>
-            <Link href="https://github.com/marksikaundi/WebAudit">
+            <Link href="https://github.com/lupleg/TS-Lupleg">
               <FaGithub className="text-white" />
             </Link>
           </div>
