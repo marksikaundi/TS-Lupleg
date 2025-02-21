@@ -156,7 +156,7 @@ const TermsPage = () => {
           </h2>
           <p className="text-gray-700">
             If you have any questions about these Terms, please contact us at
-            support@TS.Lupleg.com
+            support@lupleg.org
           </p>
         </section>
       </div>

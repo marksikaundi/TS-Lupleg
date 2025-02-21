@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const AboutPage = () => {
@@ -72,26 +71,6 @@ const AboutPage = () => {
                 changes and emerging content trends.
               </p>
             </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            Join Our Journey
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Whether you&apos;re a seasoned content creator or just starting out,
-            TS.Lupleg is here to help you achieve your content goals. Join
-            thousands of creators who are already using our platform to optimize
-            their content and grow their audience.
-          </p>
-          <div className="text-center">
-            <Link
-              href="/typescript-tips"
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#4A976A] hover:bg-[#4A976A]"
-            >
-              Get Started Today
-            </Link>
           </div>
         </div>
       </div>

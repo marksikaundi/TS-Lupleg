@@ -154,7 +154,7 @@ const PrivacyPolicy = () => {
 
           <p className="text-gray-700">
             <MdEmail className="inline text-xl mr-2 text-gray-700" />
-            Email: privacy@TS.Lupleg.com <br />
+            Email: privacy@lupleg.org <br />
           </p>
 
           <p className="text-gray-700">
