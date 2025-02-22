@@ -5,17 +5,6 @@ import Image from "next/image";
 export default function Contributing() {
   return (
     <div className="min-h-screen bg-white p-4 mt-16 md:p-8">
-      <header className="flex justify-between items-center mb-8">
-        {/* <div className="text-[#2D1537] ">
-          <Users size={32} />
-        </div> */}
-        {/* <div className="flex space-x-4">
-          <div className="w-6 h-6 bg-yellow-400 rounded-sm"></div>
-          <div className="w-6 h-6 bg-gray-200 rounded-sm"></div>
-          <div className="w-6 h-6 bg-[#2D1537] rounded-sm"></div>
-        </div> */}
-      </header>
-
       <main className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12">
           <div className="md:w-1/2 mb-8 md:mb-0">
@@ -23,7 +12,7 @@ export default function Contributing() {
               Let&apos;s build the best coding education platform, together
             </h1>
             <p className="text-gray-600 mb-4">
-              Lupleg is a{" "}
+              TS.Lupleg is a{" "}
               <span className="text-[#2D1537]">
                 platform entirely developed, to help
               </span>{" "}
@@ -57,7 +46,7 @@ export default function Contributing() {
               <FileText size={20} />
               <span>Explore tasks</span>
               <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">
-                425
+                000
               </span>
             </button>
           </Link>
@@ -67,7 +56,7 @@ export default function Contributing() {
               <Users size={20} />
               <span>Contributors</span>
               <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">
-                14,811
+                000
               </span>
             </button>
           </Link>
@@ -130,11 +119,6 @@ export default function Contributing() {
               language other than English, we would love your help.
             </li>
           </ul>
-
-          
-
-
-
         </section>
       </main>
     </div>

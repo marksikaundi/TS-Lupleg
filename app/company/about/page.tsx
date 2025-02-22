@@ -1,72 +1,69 @@
 import React from "react";
 
-const AboutPage = () => {
+export default function About() {
   return (
     <main className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mt-20 mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-bold text-[#2D1637] sm:text-5xl">
             About TS.Lupleg
           </h1>
-          <p className="mt-4 text-xl text-gray-600">
-            Empowering creators with AI-driven content optimization
+          <p className="mt-4 text-xl text-[#2D1637]">
+            Easy catch for TypeScript
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl font-semibold text-[#2D1637] mb-4">
               Our Mission
             </h2>
-            <p className="text-gray-600">
-              At TS.Lupleg, we&apos;re on a mission to revolutionize content
-              creation by making AI-powered optimization accessible to creators
-              worldwide. We believe that every creator deserves the tools to
-              maximize their content&apos;s potential and reach their target
-              audience effectively.
+            <p className="text-[#2D1637]">
+              At TS.Lupleg, we&apos;re after to make content more accessible and
+              easy to follow, without special need. Its a journey to help those
+              in need.
             </p>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl font-semibold text-[#2D1637] mb-4">
               Our Vision
             </h2>
-            <p className="text-gray-600">
-              We envision a future where content creators can seamlessly blend
-              their creativity with AI-driven insights, leading to more
-              engaging, discoverable, and successful content across all
-              platforms.
+            <p className="text-[#2D1637]">
+              We want to reach to more users who dont really need to think the
+              challenges of how something should be setup, insteady. Everything
+              is set for you.
             </p>
           </div>
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl font-semibold text-[#2D1637] mb-4">
             What Sets Us Apart
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                AI-Powered Innovation
+            <div className="p-6 bg-[#2D1637] rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">
+                We run on the web
               </h3>
-              <p className="text-gray-600">
-                Our advanced AI algorithms analyze trends and patterns to
-                provide actionable insights for content optimization.
+              <p className="text-white">
+                Our platform is developed in way that you have you need to make
+                it learn and build with TypeScript programming language.
               </p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Creator-First Approach
+            <div className="p-6 bg-[#2D1637] rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">
+                Learners-First Approach
               </h3>
-              <p className="text-gray-600">
-                We prioritize the needs of creators, building tools that enhance
-                rather than replace human creativity.
+              <p className="text-white">
+                We prioritize the needs of learners, building tools that enhance
+                helps all levels of human being to learn.
               </p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <div className="p-6 bg-[#2D1637] rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">
                 Continuous Evolution
               </h3>
-              <p className="text-gray-600">
+              <p className="text-white">
                 We constantly update our platform to stay ahead of platform
                 changes and emerging content trends.
               </p>
@@ -76,6 +73,4 @@ const AboutPage = () => {
       </div>
     </main>
   );
-};
-
-export default AboutPage;
+}

@@ -28,11 +28,10 @@ export default function Header() {
               className="text-[#2D1637]  hover:text-[#2D1637]  text-md  hidden md:block"
             >
               Github
-              {/* <FaGithub className="size-8  " /> */}
             </Link>
 
             <Link
-              href="/typescript-tips"
+              href="/solve-now"
               className="text-white rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center bg-[#2D1637] hover:bg-[#2D1637] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             >
               <PiChatsTeardropDuotone className="w-5 h-5 mr-2 " aria-hidden />
