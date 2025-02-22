@@ -1,3 +1,103 @@
-export default function Docs() {
-  return <div>Hello there, welcome to the docs</div>;
+"use client"
+
+import { Badge } from "@/components/ui/badge"
+import { useState, useEffect } from "react"
+import { typescriptTips } from "@/data/typescript-tips"
+import { Button } from "@/components/ui/button"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Menu } from "lucide-react"
+
+export default function DocsPage() {
+  const [selectedTip, setSelectedTip] = useState(typescriptTips[0])
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkIsMobile()
+    window.addEventListener("resize", checkIsMobile)
+    return () => window.removeEventListener("resize", checkIsMobile)
+  }, [])
+
+  const TipsList = () => (
+    <ScrollArea className="h-[calc(100vh-100px)]">
+      {typescriptTips.map((tip) => (
+        <Button
+          key={tip.id}
+          variant={selectedTip.id === tip.id ? "secondary" : "ghost"}
+          className="w-full justify-start mb-2"
+          onClick={() => setSelectedTip(tip)}
+        >
+          {tip.title}
+        </Button>
+      ))}
+    </ScrollArea>
+  )
+
+  return (
+    <div className="flex flex-col md:flex-row min-h-screen">
+      {/* Sidebar for desktop */}
+      {!isMobile && (
+        <div className="w-64 bg-gray-100 p-4 overflow-auto">
+          <h2 className="text-2xl font-bold mb-4">TypeScript Tips</h2>
+          <TipsList />
+        </div>
+      )}
+
+      {/* Main content */}
+      <div className="flex-1 p-4 md:p-8 overflow-auto">
+        {isMobile && (
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="mb-4">
+                <Menu className="h-4 w-4" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <h2 className="text-2xl font-bold mb-4">TypeScript Tips</h2>
+              <TipsList />
+            </SheetContent>
+          </Sheet>
+        )}
+
+        <h1 className="text-2xl md:text-3xl font-bold mb-4">{selectedTip.title}</h1>
+        <Badge variant="secondary" className="mb-4">
+          {selectedTip.category}
+        </Badge>
+        <p className="text-base md:text-lg mb-6">{selectedTip.description}</p>
+
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Code Example</h2>
+        <pre className="p-4 bg-gray-100 rounded-md overflow-x-auto mb-6">
+          <code className="text-sm">{selectedTip.code}</code>
+        </pre>
+
+        {/* Uncomment and add content for these sections when available */}
+        {/*
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Detailed Explanation</h2>
+        <div className="prose max-w-none mb-6">{selectedTip.detailedExplanation}</div>
+
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Use Cases</h2>
+        <ul className="list-disc pl-6 mb-6">
+          {selectedTip.useCases.map((useCase, index) => (
+            <li key={index} className="mb-2">
+              {useCase}
+            </li>
+          ))}
+        </ul>
+
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Best Practices</h2>
+        <ul className="list-disc pl-6">
+          {selectedTip.bestPractices.map((practice, index) => (
+            <li key={index} className="mb-2">
+              {practice}
+            </li>
+          ))}
+        </ul>
+        */}
+      </div>
+    </div>
+  )
 }
+
