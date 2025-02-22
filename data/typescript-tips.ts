@@ -1,26 +1,3 @@
-// export const typescriptTips = [
-//     {
-//       id: 1,
-//       title: "Type Inference",
-//       description: "TypeScript can infer types automatically in many cases.",
-//       code: `let message = "Hello, TypeScript!";
-//   console.log(typeof message); // Output: string`,
-//       category: "Basics",
-//     },
-//     {
-//       id: 2,
-//       title: "Union Types",
-//       description: "Union types allow a value to be one of several types.",
-//       code: `function printId(id: number | string) {
-//     console.log("Your ID is: " + id);
-//   }
-//   printId(101); // OK
-//   printId("202"); // OK`,
-//       category: "Basics",
-//     },
-//     // ... (include all 30 tips here, each with a unique id)
-//   ]
-  
 export const typescriptTips = [
   {
     title: "Type Inference",
@@ -107,7 +84,8 @@ console.log(add(5, 10)); // Output: 15`,
   },
   {
     title: "Generics",
-    description: "Create reusable components that can work with a variety of types.",
+    description:
+      "Create reusable components that can work with a variety of types.",
     code: `function identity<T>(arg: T): T {
   return arg;
 }
@@ -134,7 +112,8 @@ console.log(Direction[2]); // Output: Left`,
   },
   {
     title: "Tuple Types",
-    description: "Tuples let you express an array with a fixed number of elements whose types are known.",
+    description:
+      "Tuples let you express an array with a fixed number of elements whose types are known.",
     code: `let tuple: [string, number] = ["hello", 10];
 console.log(tuple[0].substring(1)); // OK
 // console.log(tuple[1].substring(1)); // Error, 'number' does not have 'substring'`,
@@ -143,7 +122,8 @@ console.log(tuple[0].substring(1)); // OK
   },
   {
     title: "Null and Undefined",
-    description: "TypeScript has two special types, null and undefined, for values that aren't there.",
+    description:
+      "TypeScript has two special types, null and undefined, for values that aren't there.",
     code: `let u: undefined = undefined;
 let n: null = null;
 
@@ -154,7 +134,8 @@ console.log(typeof n); // Output: object`,
   },
   {
     title: "Never Type",
-    description: "The never type represents the type of values that never occur.",
+    description:
+      "The never type represents the type of values that never occur.",
     code: `function error(message: string): never {
   throw new Error(message);
 }
@@ -171,7 +152,8 @@ function fail() {
   },
   {
     title: "Type Assertions",
-    description: "Type assertions are a way to tell the compiler 'trust me, I know what I'm doing.'",
+    description:
+      "Type assertions are a way to tell the compiler 'trust me, I know what I'm doing.'",
     code: `let someValue: any = "this is a string";
 let strLength: number = (someValue as string).length;
 console.log(strLength); // Output: 16`,
@@ -214,7 +196,8 @@ animate(0, 0, "ease-in");
   },
   {
     title: "keyof Operator",
-    description: "The keyof operator takes an object type and produces a string or numeric literal union of its keys.",
+    description:
+      "The keyof operator takes an object type and produces a string or numeric literal union of its keys.",
     code: `interface Person {
   name: string;
   age: number;
@@ -271,7 +254,8 @@ console.log(typeof result); // Output: string`,
   },
   {
     title: "Utility Types: Partial",
-    description: "Partial<T> constructs a type with all properties of T set to optional.",
+    description:
+      "Partial<T> constructs a type with all properties of T set to optional.",
     code: `interface Todo {
   title: string;
   description: string;
@@ -296,7 +280,8 @@ console.log(todo2);`,
   },
   {
     title: "Utility Types: Required",
-    description: "Required<T> constructs a type consisting of all properties of T set to required.",
+    description:
+      "Required<T> constructs a type consisting of all properties of T set to required.",
     code: `interface Props {
   a?: number;
   b?: string;
@@ -313,7 +298,8 @@ console.log(obj2);`,
   },
   {
     title: "Utility Types: Pick",
-    description: "Pick<T, K> constructs a type by picking the set of properties K from T.",
+    description:
+      "Pick<T, K> constructs a type by picking the set of properties K from T.",
     code: `interface Todo {
   title: string;
   description: string;
@@ -333,7 +319,8 @@ console.log(todo);`,
   },
   {
     title: "Utility Types: Omit",
-    description: "Omit<T, K> constructs a type by picking all properties from T and then removing K.",
+    description:
+      "Omit<T, K> constructs a type by picking all properties from T and then removing K.",
     code: `interface Todo {
   title: string;
   description: string;
@@ -354,7 +341,8 @@ console.log(todoInfo);`,
   },
   {
     title: "Utility Types: ReturnType",
-    description: "ReturnType<T> constructs a type consisting of the return type of function T.",
+    description:
+      "ReturnType<T> constructs a type consisting of the return type of function T.",
     code: `function f1(): { a: number; b: string } {
   return { a: 1, b: "test" };
 }
@@ -390,7 +378,8 @@ example(123); // Output: Not a string`,
   },
   {
     title: "Index Signatures",
-    description: "Index signatures are used for objects without a defined list of properties.",
+    description:
+      "Index signatures are used for objects without a defined list of properties.",
     code: `interface StringArray {
   [index: number]: string;
 }
@@ -539,7 +528,8 @@ strings.forEach(s => {
   },
   {
     title: "Symbols",
-    description: "Symbols are primitive values guaranteed to be unique, even if they have the same description.",
+    description:
+      "Symbols are primitive values guaranteed to be unique, even if they have the same description.",
     code: `const sym1 = Symbol("key");
 const sym2 = Symbol("key");
 
@@ -569,4 +559,4 @@ console.log(id);`,
     category: "Advanced",
     id: 30,
   },
-]
+];
