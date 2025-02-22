@@ -1,7 +1,7 @@
-import { TypeScriptTipCard } from "@/components/typescript-tip-card"
-import { typescriptTips } from "@/data/typescript-tips"
+import { TypeScriptTipCard } from "@/components/typescript-tip-card";
+import { typescriptTips } from "@/data/typescript-tips";
 
-export default function TypeScriptTips() {
+export default function SolveNow() {
   return (
     <div className="container mx-auto py-8">
       <h1 className="text-3xl font-bold mb-6">30 TypeScript Tips</h1>
@@ -11,5 +11,5 @@ export default function TypeScriptTips() {
         ))}
       </div>
     </div>
-  )
+  );
 }

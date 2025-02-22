@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-white gap-2 bg-[#2D1637] hover:bg-[#2D1637] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="/typescript-tips"
+            href="/solve-now"
           >
             <PiChatsTeardropDuotone className="w-5 h-5" aria-hidden />
             Solve now
@@ -45,7 +45,7 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/typescript-tips"
+          href="/solve-now"
           target="_blank"
           rel="noopener noreferrer"
         >
