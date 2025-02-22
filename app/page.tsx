@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PiChatsTeardropDuotone } from "react-icons/pi";
 
 export default function Home() {
@@ -25,23 +26,23 @@ export default function Home() {
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
+          <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-white gap-2 bg-[#2D1637] hover:bg-[#2D1637] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="/solve-now"
           >
             <PiChatsTeardropDuotone className="w-5 h-5" aria-hidden />
             Solve now
-          </a>
-          <a
+          </Link>
+          <Link
             className="rounded-full border border-solid border-[#2D1637] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/docs"
           >
             Read our docs
-          </a>
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="/solve-now"
           target="_blank"
@@ -55,7 +56,7 @@ export default function Home() {
             height={16}
           />
           Get TypeScript tips
-        </a>
+        </Link>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://lupleg.org/templates"
