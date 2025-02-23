@@ -54,7 +54,9 @@ export function TypeScriptPreviewModal({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl">
         <DialogHeader>
-          <DialogTitle>Try TypeScript Code</DialogTitle>
+          <DialogTitle>
+            Try TypeScript Code
+          </DialogTitle>
         </DialogHeader>
         <div className="grid grid-cols-2 gap-4">
           <div>
