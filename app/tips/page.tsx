@@ -3,7 +3,6 @@ import { typescriptTips } from "@/data/typescript-tips";
 import { Badge } from "@/components/ui/badge";
 
 export default function TipsPage() {
-  // Group tips by category
   const tipsByCategory = typescriptTips.reduce((acc, tip) => {
     if (!acc[tip.category]) {
       acc[tip.category] = [];
