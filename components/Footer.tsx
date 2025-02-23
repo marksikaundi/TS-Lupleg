@@ -10,14 +10,16 @@ const footerData = [
   {
     title: "Company",
     links: [
-      { name: "About us", path: "/company/about" },
       { name: "Contribute", path: "/company/contribute" },
-      { name: "Our Story", path: "/company/our-story" },
+      { name: "TIPS", path: "/tips" },
+      { name: "Docs", path: "/docs" },
+      { name: "Contact", path: "/contact" },
     ],
   },
   {
     title: "Legal",
     links: [
+      { name: "About us", path: "/company/about" },
       { name: "Terms", path: "/legal/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
       { name: "FAQ", path: "/legal/faq" },
