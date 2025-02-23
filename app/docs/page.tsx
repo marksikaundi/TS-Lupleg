@@ -88,7 +88,7 @@ export default function DocsPage() {
 
           {selectedTip.detailedExplanation && (
             <section>
-              <h2 className="text-xl md:text-2xl font-semibold mb-4">Detailed Explanation</h2>
+              <h2 className="text-xl md:text-2xl font-semibold mb-4">  Explanation</h2>
               <div className="prose max-w-none mb-6">{selectedTip.detailedExplanation}</div>
             </section>
           )}
