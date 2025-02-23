@@ -2,14 +2,14 @@
 
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react"
-import { typescriptTips } from "@/data/typescript-tips"
+import { typescriptTips, type TypeScriptTip } from "@/data/typescript-tips"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 
 export default function DocsPage() {
-  const [selectedTip, setSelectedTip] = useState(typescriptTips[0])
+  const [selectedTip, setSelectedTip] = useState<TypeScriptTip>(typescriptTips[0])
   const [isMobile, setIsMobile] = useState(false)
   const [isSheetOpen, setIsSheetOpen] = useState(false)
 
@@ -22,7 +22,7 @@ export default function DocsPage() {
     return () => window.removeEventListener("resize", checkIsMobile)
   }, [])
 
-  const handleTipSelect = (tip: typeof typescriptTips[0]) => {
+  const handleTipSelect = (tip: TypeScriptTip) => {
     setSelectedTip(tip)
     if (isMobile) {
       setIsSheetOpen(false)
@@ -86,35 +86,25 @@ export default function DocsPage() {
             </pre>
           </section>
 
-          {/* Uncomment and add content for these sections when available */}
-          {/*
-          <section>
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Detailed Explanation</h2>
-            <div className="prose max-w-none mb-6">{selectedTip.detailedExplanation}</div>
-          </section>
+          {selectedTip.detailedExplanation && (
+            <section>
+              <h2 className="text-xl md:text-2xl font-semibold mb-4">Detailed Explanation</h2>
+              <div className="prose max-w-none mb-6">{selectedTip.detailedExplanation}</div>
+            </section>
+          )}
 
-          <section>
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Use Cases</h2>
-            <ul className="list-disc pl-6 mb-6">
-              {selectedTip.useCases.map((useCase, index) => (
-                <li key={index} className="mb-2">
-                  {useCase}
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Best Practices</h2>
-            <ul className="list-disc pl-6">
-              {selectedTip.bestPractices.map((practice, index) => (
-                <li key={index} className="mb-2">
-                  {practice}
-                </li>
-              ))}
-            </ul>
-          </section>
-          */}
+          {selectedTip.bestPractices && selectedTip.bestPractices.length > 0 && (
+            <section>
+              <h2 className="text-xl md:text-2xl font-semibold mb-4">Best Practices</h2>
+              <ul className="list-disc pl-6">
+                {selectedTip.bestPractices.map((practice, index) => (
+                  <li key={index} className="mb-2">
+                    {practice}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </article>
       </main>
     </div>
