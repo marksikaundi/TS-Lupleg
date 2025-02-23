@@ -88,12 +88,11 @@ export default function DocsPage() {
         <article>
           <h1 className="text-2xl md:text-3xl font-bold mb-4">
             {selectedTip.title}
-          </h1>
+          </h1>{" "}
           <Badge variant="secondary" className="mb-4">
             {selectedTip.category}
           </Badge>
           <p className="text-base md:text-lg mb-6">{selectedTip.description}</p>
-
           <section>
             <h2 className="text-xl md:text-2xl font-semibold mb-4">
               Code Example
@@ -102,7 +101,6 @@ export default function DocsPage() {
               <code className="text-sm">{selectedTip.code}</code>
             </pre>
           </section>
-
           {selectedTip.detailedExplanation && (
             <section>
               <h2 className="text-xl md:text-2xl font-semibold mb-4">
@@ -114,7 +112,6 @@ export default function DocsPage() {
               </div>
             </section>
           )}
-
           {selectedTip.bestPractices &&
             selectedTip.bestPractices.length > 0 && (
               <section>
