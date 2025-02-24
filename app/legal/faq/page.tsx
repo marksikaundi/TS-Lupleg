@@ -66,7 +66,7 @@ export default function FAQ() {
     
       <section className="w-full max-w-6xl mx-auto px-4 py-12">
         <div id="faq" className="space-y-2 mb-8 mt-20">
-          <p className="text-emerald-500 font-medium">FAQ</p>
+          <p className="text-[#2D1637] font-medium">FAQ</p>
           <h2 className="text-3xl font-bold text-gray-900">
             Frequently Asked Questions
           </h2>
