@@ -11,7 +11,7 @@ const footerData = [
     title: "Company",
     links: [
       { name: "Contribute", path: "/company/contribute" },
-      { name: "TIPS", path: "/tips" },
+      { name: "Tips", path: "/tips" },
       { name: "Docs", path: "/docs" },
       { name: "Contact", path: "/contact" },
     ],
