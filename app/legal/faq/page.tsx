@@ -62,7 +62,8 @@ interface FaqItem {
 //
 interface FaqItem {
   question: string;
-  answer: string | JSX.Element;
+  // answer: string | JSX.Element;
+  answer: React.ReactNode;
   category?: "basics" | "technical" | "billing";
 }
 
