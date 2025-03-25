@@ -61,10 +61,12 @@ export default function Footer() {
           <div>
             <h5 className="mb-4 font-bold">Support us</h5>
             <div className="mt-8">
-              <Button className="text-[#2D1637] bg-[#ffffff] hover:bg-[#ffffff]">
-                <FcDonate className="mr-2 text-[#2D1637] " />
-                Donate
-              </Button>
+              <Link href="https://www.ko-fi.com/lupleg">
+                <Button className="text-[#2D1637] bg-[#ffffff] hover:bg-[#ffffff]">
+                  <FcDonate className="mr-2 text-[#2D1637] " />
+                  Donate
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
